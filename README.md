@@ -12,9 +12,10 @@ download stylebot-*sitename*.json <br>
 open stylebot options <br>
 go to backups <br>
 upload json <br>
-done
+done<br>
+if you get errors use the other method
 
-# add to stylebot (option 2 that sometimes doesnt work right idk):
+# add to stylebot (option 2):
 go to the folder of what site you want styles for <br>
 download stylebot-*sitename*-purecss.css <br>
 open this on your computer with a text editor <br>
@@ -24,4 +25,4 @@ open extensions menu and click stylebot <br>
 press the open stylebot button there <br>
 go to the code tab of stylebot <br>
 paste <br>
-if you get errors in the code use the other method its more reliable
+if you get errors use the other method
