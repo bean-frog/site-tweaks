@@ -15,7 +15,7 @@
 
 ## add style to stylebot:
 ### go to the folder of what site you want styles for <br>
-### copy the code from stylebot-*sitename*-purecss.css <br>
+### copy the code from stylebot-*sitename*-*stylename*.css <br>
 ### go to the site you want to add the styles to <br>
 ### open extensions menu and click stylebot <br>
 ### press the open stylebot button there <br>
