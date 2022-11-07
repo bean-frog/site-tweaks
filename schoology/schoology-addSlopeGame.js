@@ -10,10 +10,12 @@
 
 (function() {
     'use strict';
+
+
 const iframe = document.createElement("iframe");
 iframe.style.display = "block";
 iframe.style.height = "641px";
-iframe.style.width = "960px";
-iframe.src = "https://y8.com/embed/slope";
+iframe.style.width = "100%";
+iframe.src = "https://slopegame.online/slope-game.embed";
 document.body.appendChild(iframe);
 })();
