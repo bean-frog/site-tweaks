@@ -6,7 +6,7 @@ go to https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejp
 install <br>
 done
 
-# add to stylebot (option 1):
+# add to stylebot (option 1) THIS OPTION IS USUALLY DEPRECATED USE THE OTHER ONE:
 go to the folder of what site you want styles for <br>
 download stylebot-*sitename*.json <br>
 open stylebot options <br>
