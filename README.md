@@ -1,3 +1,11 @@
+# CURRENT TWEAKS:
+
+### -Schoology theme with background and some hover effects <br>
+### -Add slope game to Schoology homepage
+
+
+
+
 # TO INSTALL STYLEBOT STYLES:
 
 ## install stylebot
