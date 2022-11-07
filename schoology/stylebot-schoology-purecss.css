@@ -58,8 +58,10 @@ a.sExtlink-processed {
 }
 
 button._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ._3ghFm._3LeCL._31GLY._9GDcm._1D8fw.util-height-six-3PHnk.util-pds-icon-default-2kZM7.Header-header-button-active-state-3AvBm.Header-header-button-1EE8Y.fjQuT.uQOmx {
-  color: inherit;
-  height:40px
+  color: black;
+  height:40px;
+  font-family: 'Oxygen';
+  background-color: white
 }
 
 div.overdue-submissions.overdue-submissions-wrapper {
@@ -97,11 +99,14 @@ div.edge-main-wrapper:hover {
 
 header._1SIMq._3v0y7._349XD {
   color: white;
-  position: fixed;
+  position: sticky;
   display:flex;
   flex: 1;
-  width:100%;
+  width:50%;
   height: 40px;
+  background: transparent;
+  opacity: 90%;
+  align-self: center;
  }
 
 td.folder-contents-cell {
@@ -115,6 +120,7 @@ footer div div {
 
 div._1tpub._3mp5E._24W2g._26UWf.util-height-six-3PHnk.util-line-height-six-3lFgd.util-justify-content-space-between-3euFK {
   background-color:transparent;
+  display:none
 }
 
 div.discussion-card:hover {
@@ -130,12 +136,15 @@ border: 2px outset black
 }
 
 div.site-navigation {
-  background: transparent
+  background: transparent;
+  display: flex;
+  justify-content: center;
 }
 
 a._2JX1Q._1LY8n._2SVA_._9GDcm.util-height-six-3PHnk.util-width-sixteen-JiX3r.sExtlink-processed {
-  height: 40px
-}
+  height: 40px;
+  background-color: white;
+visibility: hidden}
 
 a._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ._3ghFm._3LeCL._31GLY._9GDcm._1D8fw.util-height-six-3PHnk.util-pds-icon-default-2kZM7.util-line-height-six-3lFgd.util-text-decoration-none-1n0lI.Header-header-button-active-state-3AvBm.Header-header-button-1EE8Y.sExtlink-processed {
   display: none
@@ -149,4 +158,16 @@ a._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ._3ghFm._3LeCL._
 img.imagecache.imagecache-profile_reg {
   display: block;
   border: 2px outset white;
+}
+
+span._1D8fw {
+  font-family: 'Oxygen'
+}
+div.LGaPf._3LkKR._17Z60.util-max-width-twenty-characters-2pOJU {
+    font-family: 'Oxygen'
+
+}
+
+li._24avl._3Rh90 {
+  border-radius: 5px;
 }
