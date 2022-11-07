@@ -1,28 +1,31 @@
-# stylebot-configs
-my stylebot configs for stuff idk
+# TO INSTALL STYLEBOT STYLES:
 
-# install stylebot
-go to https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US<br>
-install <br>
-done
+## install stylebot
+### go to https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US<br>
+### install <br>
+### done
 
-# add to stylebot (option 1) THIS OPTION IS USUALLY DEPRECATED USE THE OTHER ONE:
-go to the folder of what site you want styles for <br>
-download stylebot-*sitename*.json <br>
-open stylebot options <br>
-go to backups <br>
-upload json <br>
-done<br>
-if you get errors use the other method
+## add style to stylebot:
+### go to the folder of what site you want styles for <br>
+### copy the code from stylebot-*sitename*-purecss.css <br>
+### go to the site you want to add the styles to <br>
+### open extensions menu and click stylebot <br>
+### press the open stylebot button there <br>
+### go to the code tab of stylebot <br>
+### paste <br>
 
-# add to stylebot (option 2):
-go to the folder of what site you want styles for <br>
-download stylebot-*sitename*-purecss.css <br>
-open this on your computer with a text editor <br>
-control-a, control-c <br>
-go to the site you want to add the styles to <br>
-open extensions menu and click stylebot <br>
-press the open stylebot button there <br>
-go to the code tab of stylebot <br>
-paste <br>
-if you get errors use the other method
+# TO INSTALL TAMPERMONKEY SCRIPTS
+## install tampermonkey <br>
+### go to https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo <br>
+### install <br>
+### done <br>
+
+## add script to tampermonkey: <br>
+### go to the folder of the site you want scripts for <br>
+### copy the code from *sitename*-*scriptname*.js <br>
+### go to the site you want to add that script to <br>
+### open extensions menu, click tampermonkey <br>
+### click "Create Script" <br>
+### delete everything that is automatically added to the script <br>
+### paste the code you copied earlier <br>
+### go back to the site and reload
