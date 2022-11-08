@@ -2,6 +2,7 @@
 
 ### -(pausd.schoology.com) theme with background and some hover effects <br>
 ### -(pausd.schoology.com) add slope y8 game to the bottom of homepage
+### -(id.pausd.org) dark mode theme
 #### have a suggestion? Go to the issues tab and write it down!
 
 # CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
