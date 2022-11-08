@@ -1,1 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+main.content {
+  background-color: #242526;
+  border: 3px outset;
+  border-color: #0784b5;
+  border-style:groove;
+}
 
+h1.page-heading.cs-heading.cs-text {
+  color:white
+}
+
+button.cs-button-aslink {
+  color: white
+}
+
+div.login-logo.cs-login-logo {
+  display: none
+}
+
+h1.cs-app-heading {
+  background-color: #0784b5;
+  font-family: 'Oxygen'
+}
+
+div.cs-logo-container {
+  background-color: #0784b5
+}
+
+div.top-section {
+  font-family: 'Oxygen'
+}
+
+form.login-container.cs-login-container{   
+  font-family: 'Oxygen'
+
+}
+
+button.cs-button.button.button-small.button-wide.cs-nav-next-button {
+    font-family: 'Oxygen'
+
+}
+
+div.cs-container {
+  border: 3px outset;
+  border-color: #0784b5;
+  border-style:groove;
+}
