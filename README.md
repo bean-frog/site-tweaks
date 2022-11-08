@@ -2,6 +2,7 @@
 
 ### -Schoology theme with background and some hover effects <br>
 ### -Add slope game to Schoology homepage
+#### have a suggestion? Go to the issues tab and write it down!
 
 
 
