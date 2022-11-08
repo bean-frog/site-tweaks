@@ -1,8 +1,15 @@
 # CURRENT TWEAKS:
 
-### -Schoology theme with background and some hover effects <br>
-### -Add slope game to Schoology homepage
+### -(pausd.schoology.com) theme with background and some hover effects <br>
+### -(pausd.schoology.com) add slope y8 game to the bottom of homepage
 #### have a suggestion? Go to the issues tab and write it down!
+
+# CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
+
+## please note that sites don't name elements the same so these are for things like a different school district on schoology (pausd.schoology.com vs mpcsd.schoology.com for example)
+
+### For userscripts (ending in .js) change the url after '@match' in the lines at the top <br>
+### For styles (ending in .css or .scss) simply paste them into stylebot on the page you want them on
 
 
 
