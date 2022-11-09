@@ -10,8 +10,6 @@
 
 (function() {
     'use strict';
-
-
 const iframe = document.createElement("iframe");
 iframe.style.display = "block";
 iframe.style.height = "641px";
