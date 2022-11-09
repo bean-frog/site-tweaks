@@ -61,27 +61,29 @@ button._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ._3ghFm._3L
   color: black;
   height:40px;
   font-family: 'Oxygen';
-  background-color: white
+  background-color: white;
 }
 
 div.overdue-submissions.overdue-submissions-wrapper {
   border: 2px outset black;
   color: black;
-  
+  border-radius: 10px
 }
 
 
 div.upcoming-events.upcoming-events-wrapper.sEventUpcoming-processed {
-  border: 2px outset black
+  border: 2px outset black;
+  border-radius: 10px;
 }
 
 #main-inner {
   border: 2px outset black;
-  background-color: #FFF0ED
+  background-color: #FFF0ED;
 }
 
 div.edge-wrapper {
-  border: 1px outset black
+  border: 1px outset black;
+  background-color: #f0f5f7
 }
 
 span.infotip.sCommonInfotip-processed:hover {
@@ -122,7 +124,7 @@ footer div div {
 
 div._1tpub._3mp5E._24W2g._26UWf.util-height-six-3PHnk.util-line-height-six-3lFgd.util-justify-content-space-between-3euFK {
   background-color:transparent;
-  display:none
+  display:none;
 }
 
 div.discussion-card:hover {
@@ -164,7 +166,7 @@ img.imagecache.imagecache-profile_reg {
 }
 
 span._1D8fw {
-  font-family: 'Oxygen'
+  font-family: 'Oxygen';
 }
 div.LGaPf._3LkKR._17Z60.util-max-width-twenty-characters-2pOJU {
     font-family: 'Oxygen'
@@ -174,3 +176,5 @@ div.LGaPf._3LkKR._17Z60.util-max-width-twenty-characters-2pOJU {
 li._24avl._3Rh90 {
   border-radius: 5px;
 }
+
+
