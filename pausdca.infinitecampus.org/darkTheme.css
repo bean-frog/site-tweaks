@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+html body {
+  background-color: #242526;
+  font-family: 'Oxygen'
+}
+
+div.frmcontainer {
+  box-shadow: 3px 3px 3px 3px #39ace7;
+  font-family: 'Oxygen'
+}
+
+div.editiontext {
+    font-family: 'Oxygen'
+
+}
+
+div.securitylabel {
+    font-family: 'Oxygen'
+
+}
+
+div.versionmsg {
+    font-family: 'Oxygen'
+
+}
+
+div.passwordreset {
+    font-family: 'Oxygen'
+
+}
+
+input.signinbtn {
+    font-family: 'Oxygen'
+
+}
+
+form div div {
+    font-family: 'Oxygen'
+
+}
+
+a.samlLogin {
+    font-family: 'Oxygen'
+
+}
+
+body div div {
+    font-family: 'Oxygen'
+
+}
+/*main page*/
+div.header__logo {
+    font-family: 'Oxygen';
+  background-color: #0784b5;
+  border:none;
+}
+
+button.header-icon-button {
+    background-color: #0784b5;
+border: none
+}
+
+a.tool.tool--active {
+  border-color: #0784b5;
+  border-top: 1px outset #0784b5;
+  border-bottom: 1px outset #0784b5;
+
+}
