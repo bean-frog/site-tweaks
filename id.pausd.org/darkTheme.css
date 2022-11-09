@@ -129,3 +129,18 @@ div.card-data-area {
   font-family: 'Oxygen'
 }
 
+div.sec-2 {
+  background-color: #242526
+}
+
+div.sec-1 {
+    background-color: #242526
+}
+
+div.footer-branding {
+    background-color: #242526
+}
+
+button.is-open.ri-button.has-label-only.hide-label.ember-view {
+  color: #242526
+}
