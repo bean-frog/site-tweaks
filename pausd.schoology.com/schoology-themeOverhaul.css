@@ -15,7 +15,7 @@ div.sgy-card-lens {
 }
 
  body{
-	background-image: url(https://images.unsplash.com/photo-1460627390041-532a28402358?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+	/*Change the URL here to change overall background*/background-image: url(https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
 	background-size: 100% 120%;
 	height: 100vh;
   color: black;
@@ -66,7 +66,8 @@ button._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ._3ghFm._3L
 
 div.overdue-submissions.overdue-submissions-wrapper {
   border: 2px outset black;
-  color: black
+  color: black;
+  
 }
 
 
@@ -76,6 +77,7 @@ div.upcoming-events.upcoming-events-wrapper.sEventUpcoming-processed {
 
 #main-inner {
   border: 2px outset black;
+  background-color: #FFF0ED
 }
 
 div.edge-wrapper {
@@ -144,7 +146,8 @@ div.site-navigation {
 a._2JX1Q._1LY8n._2SVA_._9GDcm.util-height-six-3PHnk.util-width-sixteen-JiX3r.sExtlink-processed {
   height: 40px;
   background-color: white;
-display:none;}
+  display:none;
+}
 
 a._1SIMq._2kpZl._3OAXJ._13cCs._3_bfp._2M5aC._24avl._3v0y7._2s0LQ._3ghFm._3LeCL._31GLY._9GDcm._1D8fw.util-height-six-3PHnk.util-pds-icon-default-2kZM7.util-line-height-six-3lFgd.util-text-decoration-none-1n0lI.Header-header-button-active-state-3AvBm.Header-header-button-1EE8Y.sExtlink-processed {
   display: none
