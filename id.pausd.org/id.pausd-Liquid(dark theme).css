@@ -144,3 +144,11 @@ div.footer-branding {
 button.is-open.ri-button.has-label-only.hide-label.ember-view {
   color: #242526
 }
+
+div.wrapper.cs-wrapper {
+  background-color: #242526
+}
+
+div div h2 {
+  color: #0784b5
+}
