@@ -1,6 +1,6 @@
 # CURRENT TWEAKS:
 
-### -(pausd.schoology.com) theme with background and some hover effects <br>
+### -(pausd.schoology.com) theme with ocean background and some hover effects <br>
 ### -(pausd.schoology.com) add slope y8 game to the bottom of homepage
 ### -(id.pausd.org) dark mode theme "Liquid"
 ### -(pausdca.infinitecampus.org) dark mode theme "Liquid"
