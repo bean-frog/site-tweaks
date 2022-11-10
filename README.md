@@ -4,6 +4,7 @@
 ### -(pausd.schoology.com) add slope y8 game to the bottom of homepage
 ### -(id.pausd.org) dark mode theme "Liquid"
 ### -(pausdca.infinitecampus.org) dark mode theme "Liquid"
+### -(docs.google.com) dark mdoe theme "Liquid"
 #### have a suggestion? Go to the discussions tab and write it down!
 
 # CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
@@ -16,7 +17,7 @@
 
 
 
-# TO INSTALL STYLEBOT STYLES:
+# INSTALL CSS STYLES USING STYLEBOT:
 
 ## install stylebot
 ### go to https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US<br>
@@ -25,14 +26,14 @@
 
 ## add style to stylebot:
 ### go to the folder of what site you want styles for <br>
-### copy the code from *sitename*-*stylename*.css <br>
+### copy the code from *folder*/*filename*.css <br>
 ### go to the site you want to add the styles to <br>
 ### open extensions menu and click stylebot <br>
 ### press the open stylebot button there <br>
 ### go to the code tab of stylebot <br>
 ### paste <br>
 
-# TO INSTALL TAMPERMONKEY SCRIPTS
+# INSTALL JS SCRIPTS WITH TAMPERMONKEY
 ## install tampermonkey <br>
 ### go to https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo <br>
 ### install <br>
@@ -40,7 +41,7 @@
 
 ## add script to tampermonkey: <br>
 ### go to the folder of the site you want scripts for <br>
-### copy the code from *sitename*-*scriptname*.js <br>
+### copy the code from *folder*/*filename*.js <br>
 ### go to the site you want to add that script to <br>
 ### open extensions menu, click tampermonkey <br>
 ### click "Create Script" <br>
