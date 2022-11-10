@@ -1,10 +1,10 @@
 # CURRENT TWEAKS:
 
-### -(pausd.schoology.com) theme with ocean background and some hover effects <br>
-### -(pausd.schoology.com) add slope y8 game to the bottom of homepage
-### -(id.pausd.org) dark mode theme "Liquid"
-### -(pausdca.infinitecampus.org) dark mode theme "Liquid"
-### -(docs.google.com) dark mdoe theme "Liquid"
+### -(pausd.schoology.com) theme with ocean background and some hover effects ( [css](https://github.com/bean-frog/site-tweaks/blob/main/pausd.schoology.com/theme%20overhaul.css) and [js](https://github.com/bean-frog/site-tweaks/blob/main/pausd.schoology.com/theme%20overhaul(script%20version).js) versions)<br>
+### -(pausd.schoology.com) add slope y8 game to the bottom of homepage (js)
+### -(id.pausd.org) dark mode theme "Liquid" (css and js versions)
+### -(pausdca.infinitecampus.org) dark mode theme "Liquid" (css and js versions)
+### -(docs.google.com) dark mdoe theme "Liquid" (css and js versions)
 #### have a suggestion? Go to the discussions tab and write it down!
 
 # CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
@@ -26,7 +26,7 @@
 
 ## add style to stylebot:
 ### go to the folder of what site you want styles for <br>
-### copy the code from *folder*/*filename*.css <br>
+### copy the code from *folder* / *filename*.css <br>
 ### go to the site you want to add the styles to <br>
 ### open extensions menu and click stylebot <br>
 ### press the open stylebot button there <br>
@@ -41,7 +41,7 @@
 
 ## add script to tampermonkey: <br>
 ### go to the folder of the site you want scripts for <br>
-### copy the code from *folder*/*filename*.js <br>
+### copy the code from *folder* / *filename*.js <br>
 ### go to the site you want to add that script to <br>
 ### open extensions menu, click tampermonkey <br>
 ### click "Create Script" <br>
