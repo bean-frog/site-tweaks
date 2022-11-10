@@ -4,7 +4,7 @@
 ### -(pausd.schoology.com) add slope y8 game to the bottom of homepage
 ### -(id.pausd.org) dark mode theme "Liquid"
 ### -(pausdca.infinitecampus.org) dark mode theme "Liquid"
-#### have a suggestion? Go to the issues tab and write it down!
+#### have a suggestion? Go to the discussions tab and write it down!
 
 # CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
 
