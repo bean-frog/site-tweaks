@@ -9,11 +9,7 @@
 #### have a suggestion? Go to the discussions tab and write it down!
 #### also some of the js versions of themes can be a bit buggy try the css versions first
 # KNOWN INCOMPATIBILITIES/ISSUES
-| pausd.schoology.com  | docs.google.com  | id.pausd.org  | pausdca.infinitecampus.org  |  <br> 
-|---|---|---|---| <br>
-| background cycler incompatible with theme overhaul (remove background image declaration in theme to have compatibility  |   |   |   | <br>
-|   |   |   |   | <br>
-|   |   |   |   | <br>
+### - schoology background cycler is incompatible with theme overhaul (remove the background image declaration in theme css to have compatibility)
 
 # CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
 
