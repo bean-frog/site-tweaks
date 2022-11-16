@@ -1,3 +1,10 @@
+// ==UserScript==
+// @name google docs dark theme "Liquid"
+// @version 0.1
+// @grant GM_addStyle
+// @run-at document-start
+// @include https://docs.google.com/document/*
+// ==/UserScript==
 (function() {
 let css = `
 :root {
