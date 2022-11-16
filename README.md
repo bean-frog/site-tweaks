@@ -8,6 +8,13 @@
 ### -(docs.google.com) dark mdoe theme "Liquid" ([css](https://github.com/bean-frog/site-tweaks/blob/main/docs.google.com/docs.google.com-Liquid(dark%20theme).scss) or [js](https://github.com/bean-frog/site-tweaks/blob/main/docs.google.com/docs.google.com-LiquidTheme(script%20version).js))
 #### have a suggestion? Go to the discussions tab and write it down!
 #### also some of the js versions of themes can be a bit buggy try the css versions first
+# KNOWN INCOMPATIBILITIES/ISSUES
+| pausd.schoology.com  | docs.google.com  | id.pausd.org  | pausdca.infinitecampus.org  |  <br> 
+|---|---|---|---| <br>
+| background cycler incompatible with theme overhaul (remove background image declaration in theme to have compatibility  |   |   |   | <br>
+|   |   |   |   | <br>
+|   |   |   |   | <br>
+
 # CHANGE THE SITE THE SCRIPT OR STYLE AFFECTS:
 
 ## please note that sites don't name elements the same so these are for things like a different school district on schoology (pausd.schoology.com vs mpcsd.schoology.com for example)
