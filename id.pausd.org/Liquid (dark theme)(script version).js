@@ -1,3 +1,11 @@
+// ==UserScript==
+// @name id.pausd theme "Liquid"
+// @version 0.1
+// @grant GM_addStyle
+// @run-at document-start
+// @include https://id.pausd.org
+// ==/UserScript==
+
 (function() {
 let css = `
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
