@@ -2,6 +2,7 @@
 
 ### -(pausd.schoology.com) theme with ocean background and some hover effects ( [css](https://github.com/bean-frog/site-tweaks/blob/main/pausd.schoology.com/theme%20overhaul.css) or [js](https://github.com/bean-frog/site-tweaks/blob/main/pausd.schoology.com/theme%20overhaul(script%20version).js) )<br>
 ### -(pausd.schoology.com) add slope y8 game to the bottom of homepage ( [js](https://github.com/bean-frog/site-tweaks/blob/main/pausd.schoology.com/addSlopeGame.js))
+### -(pausd.schoology.com) background image cycler ([js](https://github.com/bean-frog/site-tweaks/blob/main/pausd.schoology.com/backgroundCycler.js))
 ### -(id.pausd.org) dark mode theme "Liquid" ( [css](https://github.com/bean-frog/site-tweaks/blob/main/id.pausd.org/Liquid(dark%20theme).css) or [js](https://github.com/bean-frog/site-tweaks/blob/main/id.pausd.org/Liquid%20(dark%20theme)(script%20version).js) )
 ### -(pausdca.infinitecampus.org) dark mode theme "Liquid" ([css](https://github.com/bean-frog/site-tweaks/blob/main/pausdca.infinitecampus.org/Liquid(dark%20theme).css))
 ### -(docs.google.com) dark mdoe theme "Liquid" ([css](https://github.com/bean-frog/site-tweaks/blob/main/docs.google.com/docs.google.com-Liquid(dark%20theme).scss) or [js](https://github.com/bean-frog/site-tweaks/blob/main/docs.google.com/docs.google.com-LiquidTheme(script%20version).js))
