@@ -53,4 +53,5 @@
 ### click "Create Script" <br>
 ### delete everything that is automatically added to the script <br>
 ### paste the code you copied earlier <br>
+### save <br>
 ### go back to the site and reload
