@@ -44,6 +44,7 @@
 ### go to https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo <br>
 ### install <br>
 ### done <br>
+### note: if you enable check for updates on a script in tampermonkey (settings tab), and paste the url of the script you will automatically recieve any updates!
 
 ## add script to tampermonkey: <br>
 ### go to the folder of the site you want scripts for <br>
