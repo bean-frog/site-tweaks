@@ -24,6 +24,7 @@
     modnav.style.padding = "5px"
     modnav.style.paddingLeft = "0px"
     modnav.style.paddingRight = "10px"
+    modnav.style.zIndex = "1"
     sitenav.insertAdjacentElement('afterend',modnav);
 
     let slopeBtn = document.createElement('button');
@@ -49,6 +50,14 @@
    hexBtn.style.top = '0'
    hexBtn.style.display = 'flex';
     modnav.appendChild(hexBtn);
+
+    let td4Btn = document.createElement('button');
+  td4Btn.setAttribute('id', 'td4Btn');
+  td4Btn.textContent = 'BTD4';
+  td4Btn.style.position = "relative"
+   td4Btn.style.top = '0'
+   td4Btn.style.display = 'flex';
+    modnav.appendChild(td4Btn);
 
     const slope = document.createElement("iframe");
     slope.setAttribute('id', 'slope');
@@ -97,6 +106,21 @@ hex.src = "https://www.addictinggames.com/embed/html5-games/25180"
     $("#hexBtn").click(function(){
   $("#hex").toggle();
 $("#hexBtn").toggleText('Hex.io', 'Hex.io(on)');
+        });
+const td4 = document.createElement("iframe");
+   td4.setAttribute('id', 'td4');
+td4.style.display = "none";
+td4.style.height = "550px";
+td4.style.width = "100%";
+td4.style.opacity = "80%";
+td4.src = "https://www.addictinggames.com/embed/html5-games/20543"
+    document.body.appendChild(td4);
+
+
+
+    $("#td4Btn").click(function(){
+  $("#td4").toggle();
+$("#td4Btn").toggleText('BTD4', 'BTD4(on)');
         });
 
 
