@@ -86,7 +86,7 @@ $("#ts").click(function(){
 });
     //selection dialog
 function setBg() {
-    let url = prompt("Enter an image URL (right click -> open image in new tab -> copy that URL", "URL");
+    let url = prompt("Enter an image URL (right click -> open image in new tab -> copy that URL (base64 strings are supported as well)", "");
 if (url != null) {
   console.log("successfully got url '" + url + "'")
   document.body.style.backgroundImage = "url(" + url + ")"
@@ -94,6 +94,9 @@ if (url != null) {
     console.log("body.style.backgroundImage set to url(" + url + ")")
     document.cookie = 'url='+ url +'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/' //experimental cookie thing
 }
+    else {
+    alert("you braindead homunculus you have to actually put something there");
+    }
 }
  //add cookie stuff from carhartl/js-cookie
 })();
