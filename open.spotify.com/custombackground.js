@@ -30,6 +30,9 @@ addGlobalStyle('div.contentSpacing.NXiYChVp4Oydfxd7rT5r.RMDSGDMFrx8eXHpFphqG {ba
 addGlobalStyle('div.dZPmmYYhskhqHJCAruvI.wTUruPetkKdWAR1dd6w4 {visibility: hidden}');
 addGlobalStyle('div.koyeY6AgGRPmyPITi7yO.qJOhHoRcFhHJpEQ2CwFT {visibility: hidden}');
 addGlobalStyle('span.Type__TypeElement-sc-goli3j-0.dXoLvE.G7zO58ORUHxcUw0sXktM {background-color: transparent;}');
+addGlobalStyle('.transparentFooter {background-color: transparent;border-top:  1px groove white; color: white !important}');
+addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  1px groove white; color: black !important}');
+
 
 //transparent footer addGlobalStyle('footer.GD2gbRtcs5dOjMGAM_Y4 {background-color: transparent;border-top:  1px groove white}');
 //transparent sidenav nav.Root__nav-bar {  background-color: transparent;  border-right: 1px groove white}
@@ -47,9 +50,40 @@ addGlobalStyle('span.Type__TypeElement-sc-goli3j-0.dXoLvE.G7zO58ORUHxcUw0sXktM {
     selection.style.float = "left";
     selection.style.display = "inline-block"
 
+    let tp = document.createElement("button");
+     tp.textContent = "Transparent Playbar";
+    tp.style.zIndex = "1";
+    tp.style.color = "white";
+    tp.style.backgroundColor = "#121212";
+    tp.style.position = "absolute";
+    tp.style.float = "left";
+    tp.style.display = "inline-block";
+    tp.style.marginLeft = "100px";
+    tp.setAttribute('id', 'tp');
+
+    let ts = document.createElement("button");
+     ts.textContent = "Transparent Sidebar";
+    ts.style.zIndex = "1";
+    ts.style.color = "white";
+    ts.style.backgroundColor = "#121212";
+    ts.style.position = "absolute";
+    ts.style.float = "left";
+    ts.style.display = "inline-block";
+    ts.style.marginLeft = "225px";
+    ts.setAttribute('id', 'ts');
+
     let selAnchor = document.querySelector("body");
     selAnchor.insertAdjacentElement('beforebegin', selection);
+        selAnchor.insertAdjacentElement('beforebegin', tp);
+            selAnchor.insertAdjacentElement('beforebegin', ts);
 
+$("#tp").click(function(){
+  $("footer.GD2gbRtcs5dOjMGAM_Y4").toggleClass("transparentFooter");
+});
+
+$("#ts").click(function(){
+  $("nav.Root__nav-bar").toggleClass("transparentSidebar");
+});
     //selection dialog
 function setBg() {
     let url = prompt("Enter an image URL (right click -> open image in new tab -> copy that URL", "URL");
@@ -58,10 +92,8 @@ if (url != null) {
   document.body.style.backgroundImage = "url(" + url + ")"
     document.body.style.backgroundSize = "100%"
     console.log("body.style.backgroundImage set to url(" + url + ")")
+    document.cookie = 'url='+ url +'; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/' //experimental cookie thing
 }
 }
-
-
-
-
+ //add cookie stuff from carhartl/js-cookie
 })();
