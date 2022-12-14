@@ -8,10 +8,10 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js
 // @grant GM_addStyle
 // ==/UserScript==
-
+// comments with [CN] explain features, for any future devs looking at this who are confused by the spaghetti that amazes even the best italian chefs
 (function() {
     'use strict';
-function addGlobalStyle(css) {
+function addGlobalStyle(css) {  //[CN] function that allows css to be easily added to the <head> using addGlobalStyle(<css>)
     var head, style;
     head = document.getElementsByTagName('head')[0];
     if (!head) { return; }
@@ -20,7 +20,7 @@ function addGlobalStyle(css) {
     style.innerHTML = css;
     head.appendChild(style);
 }
-addGlobalStyle('.tUwyjggD2n5KvEtP5z1B {background: transparent}');
+addGlobalStyle('.tUwyjggD2n5KvEtP5z1B {background: transparent}'); //[CN] examples of above comment
 addGlobalStyle('div.HsbczDqu9qjcYr7EIdHR {display:none;}');
 addGlobalStyle('div.RP2rRchy4i8TIp1CTmb7 {background: transparent;}');
 addGlobalStyle('div.gHImFiUWOg93pvTefeAD.xYgjMpAjE5XT05aRIezb {display:none}');
@@ -30,12 +30,11 @@ addGlobalStyle('div.contentSpacing.NXiYChVp4Oydfxd7rT5r.RMDSGDMFrx8eXHpFphqG {ba
 addGlobalStyle('div.dZPmmYYhskhqHJCAruvI.wTUruPetkKdWAR1dd6w4 {visibility: hidden}');
 addGlobalStyle('div.koyeY6AgGRPmyPITi7yO.qJOhHoRcFhHJpEQ2CwFT {visibility: hidden}');
 addGlobalStyle('span.Type__TypeElement-sc-goli3j-0.dXoLvE.G7zO58ORUHxcUw0sXktM {background-color: transparent;}');
-addGlobalStyle('.transparentFooter {background-color: transparent;border-top:  1px groove white; color: white !important}');
-addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  1px groove white; color: black !important}');
+addGlobalStyle('.transparentFooter {background-color: transparent;border-top:  1px groove white; color: white !important}'); // [CN] extra class containing all css rules needed for the transparent playbar
+addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  1px groove white; color: black !important}'); // [CN] extra class containing all css rules needed for the transparent sidebar
 
 
-//transparent footer addGlobalStyle('footer.GD2gbRtcs5dOjMGAM_Y4 {background-color: transparent;border-top:  1px groove white}');
-//transparent sidenav nav.Root__nav-bar {  background-color: transparent;  border-right: 1px groove white}
+
 
 
 
