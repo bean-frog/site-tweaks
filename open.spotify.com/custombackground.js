@@ -8,10 +8,10 @@
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js
 // @grant GM_addStyle
 // ==/UserScript==
-// comments with [CN] explain features, for any future devs looking at this who are confused by the spaghetti that amazes even the best italian chefs
+// comments with [N] explain features, for any future devs looking at this who are confused by the spaghetti that amazes even the best italian chefs
 (function() {
     'use strict';
-function addGlobalStyle(css) {  //[CN] function that allows css to be easily added to the <head> using addGlobalStyle(<css>)
+function addGlobalStyle(css) {  //[N] function that allows css to be easily added to the <head> using addGlobalStyle(<css>)
     var head, style;
     head = document.getElementsByTagName('head')[0];
     if (!head) { return; }
@@ -20,7 +20,7 @@ function addGlobalStyle(css) {  //[CN] function that allows css to be easily add
     style.innerHTML = css;
     head.appendChild(style);
 }
-addGlobalStyle('.tUwyjggD2n5KvEtP5z1B {background: transparent}'); //[CN] examples of above comment
+addGlobalStyle('.tUwyjggD2n5KvEtP5z1B {background: transparent}'); //[N] examples of above comment
 addGlobalStyle('div.HsbczDqu9qjcYr7EIdHR {display:none;}');
 addGlobalStyle('div.RP2rRchy4i8TIp1CTmb7 {background: transparent;}');
 addGlobalStyle('div.gHImFiUWOg93pvTefeAD.xYgjMpAjE5XT05aRIezb {display:none}');
@@ -30,16 +30,16 @@ addGlobalStyle('div.contentSpacing.NXiYChVp4Oydfxd7rT5r.RMDSGDMFrx8eXHpFphqG {ba
 addGlobalStyle('div.dZPmmYYhskhqHJCAruvI.wTUruPetkKdWAR1dd6w4 {visibility: hidden}');
 addGlobalStyle('div.koyeY6AgGRPmyPITi7yO.qJOhHoRcFhHJpEQ2CwFT {visibility: hidden}');
 addGlobalStyle('span.Type__TypeElement-sc-goli3j-0.dXoLvE.G7zO58ORUHxcUw0sXktM {background-color: transparent;}');
-addGlobalStyle('.transparentFooter {background-color: transparent;border-top:  1px groove white; color: white !important}'); // [CN] extra class containing all css rules needed for the transparent playbar
-addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  1px groove white; color: black !important}'); // [CN] extra class containing all css rules needed for the transparent sidebar
+addGlobalStyle('.transparentFooter {background-color: transparent;border-top:  1px groove white; color: white !important}'); // [N] extra class containing all css rules needed for the transparent playbar
+addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  1px groove white; color: black !important}'); // [N] extra class containing all css rules needed for the transparent sidebar
 
 
 
 
 
 
-    //selection button stuff
-    let selection = document.createElement("button");
+    //selection button 
+    let selection = document.createElement("button"); // [N] create and style the button for selecting a url
     selection.textContent = "Set Background";
     selection.style.zIndex = "1";
     selection.style.color = "white";
@@ -49,7 +49,7 @@ addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  
     selection.style.float = "left";
     selection.style.display = "inline-block"
 
-    let tp = document.createElement("button");
+    let tp = document.createElement("button"); // [N] button to make playbar transparent
      tp.textContent = "Transparent Playbar";
     tp.style.zIndex = "1";
     tp.style.color = "white";
@@ -60,7 +60,7 @@ addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  
     tp.style.marginLeft = "100px";
     tp.setAttribute('id', 'tp');
 
-    let ts = document.createElement("button");
+    let ts = document.createElement("button"); // [N] button to make playbar transparent
      ts.textContent = "Transparent Sidebar";
     ts.style.zIndex = "1";
     ts.style.color = "white";
@@ -72,19 +72,20 @@ addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  
     ts.setAttribute('id', 'ts');
 
     let selAnchor = document.querySelector("body");
-    selAnchor.insertAdjacentElement('beforebegin', selection);
+    selAnchor.insertAdjacentElement('beforebegin', selection);  // [N] append selection, ts, and tp buttons 
         selAnchor.insertAdjacentElement('beforebegin', tp);
             selAnchor.insertAdjacentElement('beforebegin', ts);
 
 $("#tp").click(function(){
-  $("footer.GD2gbRtcs5dOjMGAM_Y4").toggleClass("transparentFooter");
+  $("footer.GD2gbRtcs5dOjMGAM_Y4").toggleClass("transparentFooter"); // [N] transparent footer jQuery toggle
 });
 
 $("#ts").click(function(){
-  $("nav.Root__nav-bar").toggleClass("transparentSidebar");
+  $("nav.Root__nav-bar").toggleClass("transparentSidebar"); // [N] transparent sidebar jQuery toggle
 });
+    //somewhere around here add JSColor
     //selection dialog
-function setBg() {
+function setBg() {  // the popup asking for image URL
     let url = prompt("Enter an image URL (right click -> open image in new tab -> copy that URL (base64 strings are supported as well)", "");
 if (url != null) {
   console.log("successfully got url '" + url + "'")
@@ -97,5 +98,6 @@ if (url != null) {
     alert("you braindead homunculus you have to actually put something there");
     }
 }
- //add cookie stuff from carhartl/js-cookie
+ //add cookie stuff
+ 
 })();
