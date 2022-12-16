@@ -38,6 +38,7 @@
     addGlobalStyle('div.dZPmmYYhskhqHJCAruvI.wTUruPetkKdWAR1dd6w4 {visibility: hidden}');
     addGlobalStyle('div.koyeY6AgGRPmyPITi7yO.qJOhHoRcFhHJpEQ2CwFT {visibility: hidden}');
     addGlobalStyle('span.Type__TypeElement-sc-goli3j-0.dXoLvE.G7zO58ORUHxcUw0sXktM {background-color: transparent;}');
+    addGlobalStyle("@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');")
     //toggled styles
     addGlobalStyle('.transparentFooter {background-color: transparent;border-top:  1px groove white; color: white !important}'); // [N] extra class containing all css rules needed for the transparent playbar
     addGlobalStyle('.transparentSidebar {background-color: transparent;border-top:  1px groove white; color: black !important}'); // [N] extra class containing all css rules needed for the transparent sidebar
@@ -45,6 +46,7 @@
     //toggled menu
     let menuBtn = document.createElement("button");
     menuBtn.textContent = "Menu";
+    menuBtn.style.fontFamily = "Oxygen"
     menuBtn.style.zIndex = "1";
     menuBtn.style.color = "white";
     menuBtn.style.backgroundColor = "#121212";
@@ -54,7 +56,7 @@
     menuBtn.setAttribute('id', "menuBtn");
 
     let menu = document.createElement("div");
-    menu.style.width = "150px"
+    menu.style.width = "200px"
     menu.style.height = "300px"
     menu.style.position = "absolute"
     menu.style.backgroundColor = "#121212"
@@ -69,7 +71,7 @@
 
     //selection button
     let selection = document.createElement("button"); // [N] create and style the button for selecting a url
-    selection.textContent = "Set Background";
+    selection.textContent = "Set Background Image";
     selection.style.zIndex = "1";
     selection.style.color = "white";
     selection.style.backgroundColor = "#121212";
@@ -100,6 +102,10 @@
     ts.style.float = "left"
     ts.style.marginTop = "1px"
 
+    let menuTitle = document.createElement("h3")
+    menuTitle.textContent = "Spotify Theme Menu"
+    menuTitle.style.color = "white"
+    menuTitle.style.fontFamily = "Oxygen"
 
     let selAnchor = document.querySelector("body");
     selAnchor.insertAdjacentElement('beforebegin', menuBtn);
@@ -107,6 +113,7 @@
     menu.insertAdjacentElement('afterbegin', selection); // [N] append selection, ts, and tp buttons
     menu.insertAdjacentElement('afterbegin', tp);
     tp.insertAdjacentElement('afterend', ts);
+    tp.insertAdjacentElement('beforebegin', menuTitle);
 
      $("#menuBtn").click(function() {
         $("#menu").toggle();
