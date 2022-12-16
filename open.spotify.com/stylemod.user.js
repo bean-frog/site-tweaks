@@ -12,10 +12,8 @@
 // comments with [N] explain features, for any future devs looking at this who are confused by the spaghetti that amazes even the best italian chefs
 (function() {
     'use strict';
-    setInterval(forceCustomTitle, 1);
-    function forceCustomTitle() {
-            document.title = "Spotify Style Mod by bean_frog"
-    }
+
+
     function addGlobalStyle(css) { //[N] function that allows css to be easily added to the <head> using addGlobalStyle(<css>)
         var head, style;
         head = document.getElementsByTagName('head')[0];
@@ -107,15 +105,29 @@
     menuTitle.style.color = "white"
     menuTitle.style.fontFamily = "Oxygen"
 
+    let pageTitleBtn = document.createElement("button");
+    pageTitleBtn.textContent = "Custom Tab Title";
+    pageTitleBtn.style.zIndex = "1";
+    pageTitleBtn.style.color = "white";
+    pageTitleBtn.style.backgroundColor = "#121212";
+    pageTitleBtn.setAttribute('id', 'pageTitleBtn');
+    pageTitleBtn.style.position = "relative"
+    pageTitleBtn.style.display = "block"
+    pageTitleBtn.style.float = "left"
+    pageTitleBtn.style.marginTop = "20px"
+    pageTitleBtn.addEventListener('click', setCustomTitle);
+
+
     let selAnchor = document.querySelector("body");
     selAnchor.insertAdjacentElement('beforebegin', menuBtn);
     selAnchor.insertAdjacentElement('beforebegin', menu);
     menu.insertAdjacentElement('afterbegin', selection); // [N] append selection, ts, and tp buttons
     menu.insertAdjacentElement('afterbegin', tp);
     tp.insertAdjacentElement('afterend', ts);
+    ts.insertAdjacentElement('afterend', pageTitleBtn);
     tp.insertAdjacentElement('beforebegin', menuTitle);
 
-     $("#menuBtn").click(function() {
+    $("#menuBtn").click(function() {
         $("#menu").toggle();
     });
 
@@ -126,6 +138,22 @@
     $("#ts").click(function() {
         $("nav.Root__nav-bar").toggleClass("transparentSidebar"); // [N] transparent sidebar jQuery toggle
     });
+    //custom title dialog
+     function setCustomTitle() { // the popup asking for title
+        let customTitle = prompt("Enter a custom title for the tab", "Spotify Style Mod by bean_frog");
+        if (customTitle != null) {
+            console.log("successfully got user's title '" + customTitle + "'")
+            console.log("page title set to" + customTitle)
+            setInterval(forceCustomTitle, 1);
+
+    function forceCustomTitle() {
+        document.title = customTitle
+    }
+        } else {
+            alert("you braindead homunculus you have to actually put something there");
+        }
+    }
+
     //selection dialog
     function setBg() { // the popup asking for image URL
         let url = prompt("Enter an image URL (right click -> open image in new tab -> copy that URL (base64 strings are supported as well)", "");
