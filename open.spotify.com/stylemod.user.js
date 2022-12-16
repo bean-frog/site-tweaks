@@ -10,10 +10,40 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 // comments with [N] explain features, for any future devs looking at this who are confused by the spaghetti that amazes even the best italian chefs
+
+/*
+list of classes with text(for the custom text color)
+div.RP2rRchy4i8TIp1CTmb7
+h1.Type__TypeElement-sc-goli3j-0.fhrvNw
+div.xgmjVLxjqfcXK5BV_XyN
+span.UyzJidwrGk3awngSGIwv
+div span a
+div.iCQtmPqY0QvkumAOuCjr
+span.Type__TypeElement-sc-goli3j-0.dvSMET
+div.Type__TypeElement-sc-goli3j-0.kHHFyx.t_yrXoUO3qGsJS4Y6iXX.standalone-ellipsis-one-line
+a.link-subtle.ATUzFKub89lzvkmvhpyE
+a svg path
+button.IPVjkkhh06nan7aZK7Bx
+a.r9YzlaAPnM2LGK97GSfa
+span.Type__TypeElement-sc-goli3j-0.gkqrGP.VjIb8SfYTkc4wMpqqj3f
+span.Type__TypeElement-sc-goli3j-0.dXoLvE
+span.Type__TypeElement-sc-goli3j-0.hGXzYa.NCKSUYdZaTMrobq8ilkc
+h1.Type__TypeElement-sc-goli3j-0.dXoLvE.SMJIXlalPk_TESlyt2pC
+p.Type__TypeElement-sc-goli3j-0.kUtbWF.EzRmGRncgnv1zFgF4dqE
+a.MfVrtIzQJ7iZXfRWg6eM
+div.tsv7E_RBBw6v0XTQlcRo
+div.Type__TypeElement-sc-goli3j-0.dvSMET.Za_uNH8nTZ0qCuIqbPLZ
+div div a
+*/
+
 (function() {
     'use strict';
 
-
+    $.fn.extend({
+    toggleText: function(a, b){
+        return this.text(this.text() == b ? a : b);
+    }
+});
     function addGlobalStyle(css) { //[N] function that allows css to be easily added to the <head> using addGlobalStyle(<css>)
         var head, style;
         head = document.getElementsByTagName('head')[0];
@@ -52,6 +82,7 @@
     menuBtn.style.float = "left";
     menuBtn.style.display = "inline-block"
     menuBtn.setAttribute('id', "menuBtn");
+    menuBtn.style.border = "1px groove white"
 
     let menu = document.createElement("div");
     menu.style.width = "200px"
@@ -65,8 +96,6 @@
     menu.setAttribute('id', 'menu');
     menu.style.marginTop = "25px"
 
-
-
     //selection button
     let selection = document.createElement("button"); // [N] create and style the button for selecting a url
     selection.textContent = "Set Background Image";
@@ -77,6 +106,7 @@
     selection.style.position = "absolute";
     selection.style.display = "block"
     selection.style.marginTop = "21px"
+    selection.style.border = "1px groove white"
 
     let tp = document.createElement("button"); // [N] button to make playbar transparent
     tp.textContent = "Transparent Playbar";
@@ -84,10 +114,10 @@
     tp.style.color = "white";
     tp.style.backgroundColor = "#121212";
     tp.setAttribute('id', 'tp');
-    tp.style.marginTop = "21px"
+    tp.style.marginTop = "20px"
     tp.style.position = "relative"
     tp.style.display = "block"
-
+    tp.style.border = "1px groove white"
 
     let ts = document.createElement("button"); // [N] button to make playbar transparent
     ts.textContent = "Transparent Sidebar";
@@ -99,6 +129,7 @@
     ts.style.display = "block"
     ts.style.float = "left"
     ts.style.marginTop = "1px"
+    ts.style.border = "1px groove white"
 
     let menuTitle = document.createElement("h3")
     menuTitle.textContent = "Spotify Theme Menu"
@@ -116,7 +147,7 @@
     pageTitleBtn.style.float = "left"
     pageTitleBtn.style.marginTop = "20px"
     pageTitleBtn.addEventListener('click', setCustomTitle);
-
+    pageTitleBtn.style.border = "1px groove white"
 
     let selAnchor = document.querySelector("body");
     selAnchor.insertAdjacentElement('beforebegin', menuBtn);
@@ -139,16 +170,17 @@
         $("nav.Root__nav-bar").toggleClass("transparentSidebar"); // [N] transparent sidebar jQuery toggle
     });
     //custom title dialog
-     function setCustomTitle() { // the popup asking for title
-        let customTitle = prompt("Enter a custom title for the tab", "Spotify Style Mod by bean_frog");
+    function setCustomTitle() { // the popup asking for title
+
+        const customTitle = prompt("Enter a custom title for the tab", "Spotify Style Mod by bean_frog");
         if (customTitle != null) {
             console.log("successfully got user's title '" + customTitle + "'")
             console.log("page title set to" + customTitle)
             setInterval(forceCustomTitle, 1);
 
-    function forceCustomTitle() {
-        document.title = customTitle
-    }
+            function forceCustomTitle() {
+                document.title = customTitle
+            }
         } else {
             alert("you braindead homunculus you have to actually put something there");
         }
@@ -162,7 +194,6 @@
             document.body.style.backgroundImage = "url(" + url + ")"
             document.body.style.backgroundSize = "100%"
             console.log("body.style.backgroundImage set to url(" + url + ")")
-            document.cookie = 'url=' + url + '; expires=Wed, 1 Jan 2070 13:47:11 UTC; path=/' //experimental cookie thing
         } else {
             alert("you braindead homunculus you have to actually put something there");
         }
