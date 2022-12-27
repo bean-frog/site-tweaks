@@ -8,6 +8,7 @@
 ### -(pausdca.infinitecampus.org) dark mode theme "Liquid" ([css](https://github.com/bean-frog/site-tweaks/blob/main/pausdca.infinitecampus.org/Liquid(dark%20theme).css))
 ### -(docs.google.com) dark mdoe theme "Liquid" ([css](https://github.com/bean-frog/site-tweaks/blob/main/docs.google.com/docs.google.com-Liquid(dark%20theme).scss) or [js](https://github.com/bean-frog/site-tweaks/blob/main/docs.google.com/docs.google.com-LiquidTheme(script%20version).js))
 ### -(discord.com) The old discord font "whitney" because the new one fucking sucks ([css](https://github.com/bean-frog/site-tweaks/blob/main/discord.com%20(web)/old-font.css))
+###   -(open.spotify.com) a menu with some customizable styles, like custom background, transparent elements, and a font color changer coming soon [js](https://github.com/bean-frog/site-tweaks/blob/main/open.spotify.com/stylemod.user.js)
 #### have a suggestion? Go to the discussions tab and write it down!
 #### also some of the js versions of themes can be a bit buggy try the css versions first
 # KNOWN INCOMPATIBILITIES/ISSUES
