@@ -18,7 +18,7 @@
 
 ## please note that sites don't name elements the same so these are for things like a different school district on schoology (pausd.schoology.com vs mpcsd.schoology.com for example)
 
-### For userscripts (ending in .js) change the url after '@match' in the lines at the top <br>
+### For userscripts (ending in .js) change the url after '@match' in the lines at the top (dont get too specific with the url, and add /* at the end to apply to all pages example: open.spotify.com/* <br>
 ### For styles (ending in .css or .scss) simply paste them into stylebot on the page you want them on
 
 
