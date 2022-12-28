@@ -7,7 +7,11 @@
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=schoology.com
 // @grant        none
 // ==/UserScript==
-
+/*You can add your own images to this too,
+follow this syntax:
+const image(whatever number is next) = "url('image url')"
+then add image(whatever number is next) to the var images = [...]
+*/
 (function() {
     'use strict';
 const image1 = "url('https://images.unsplash.com/photo-1571755931207-3ede68df575a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1474&q=80')"
