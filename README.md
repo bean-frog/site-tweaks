@@ -24,21 +24,18 @@
 
 
 
-# INSTALL CSS STYLES USING STYLEBOT:
+# INSTALL CSS STYLES USING STYLUS:
 
-## install stylebot
-### go to https://chrome.google.com/webstore/detail/stylebot/oiaejidbmkiecgbjeifoejpgmdaleoha?hl=en-US<br>
+## install stylus
+### go to https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne<br>
 ### install <br>
 ### done
 
-## add style to stylebot:
+## add style to stylus:
 ### go to the folder of what site you want styles for <br>
-### copy the code from *folder* / *filename*.css <br>
-### go to the site you want to add the styles to <br>
-### open extensions menu and click stylebot <br>
-### press the open stylebot button there <br>
-### go to the code tab of stylebot <br>
-### paste <br>
+### go to the code of the style you want <br>
+### press the "raw" button <br>
+
 
 # INSTALL JS SCRIPTS WITH TAMPERMONKEY
 ## install tampermonkey <br>
