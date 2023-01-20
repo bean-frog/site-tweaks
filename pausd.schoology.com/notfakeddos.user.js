@@ -2,7 +2,7 @@
 // @name       not fake ddos
 // @namespace  http://gkieran.github.io/
 // @version    0.1
-// @description  Replace the entire body of a web page with new HTML
+// @description  Replace schoology with very real ddos
 // @match      https://pausd.schoology.com/*
 // @grant      none
 // ==/UserScript==
