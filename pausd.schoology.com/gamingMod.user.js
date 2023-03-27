@@ -97,7 +97,7 @@ slope.style.display = "none";
 slope.style.height = "550px";
 slope.style.width = framewidth;
 slope.style.opacity = "80%";
-slope.src = "https://slopegame.online/slope-game.embed"
+slope.src = "https://gkieran.github.io/basedgaming/embeds/slope"
     document.body.appendChild(slope);
 
 
@@ -113,7 +113,7 @@ stunt.style.display = "none";
 stunt.style.height = frameheight;
 stunt.style.width = framewidth;
 stunt.style.opacity = "80%";
-stunt.src = "https://www.addictinggames.com/embed/html5-games/23687"
+stunt.src = "https://gkieran.github.io/404"
     document.body.appendChild(stunt);
 
 
