@@ -2,7 +2,7 @@
 // @name         epic gamer gaming mod 3 because the last 2 were dumpster fires
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  estos putos que solo andan chingad les parto su madre
+// @description  does things
 // @author       You
 // @match        https://pausd.schoology.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=schoology.com
