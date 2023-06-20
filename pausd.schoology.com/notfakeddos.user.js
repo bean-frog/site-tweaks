@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       not fake ddos
-// @namespace  http://gkieran.github.io/
+// @namespace  http://bean-frog.github.io/
 // @version    0.1
 // @description  Replace schoology with very real ddos
 // @match      https://pausd.schoology.com/*
