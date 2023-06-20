@@ -2,8 +2,8 @@
 // @name       not fake ddos
 // @namespace  http://bean-frog.github.io/
 // @version    0.1
-// @description  Replace schoology with very real ddos
-// @match      https://pausd.schoology.com/*
+// @description  very real ddos
+// @match      https://*/*
 // @grant      none
 // ==/UserScript==
 
