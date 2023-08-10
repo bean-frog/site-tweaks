@@ -2,12 +2,13 @@
 // @name         epic gamer gaming mod 3 because the last 2 were dumpster fires
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  does things
+// @description  estos putos que solo andan chingad les parto su madre
 // @author       You
 // @match        https://pausd.schoology.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=schoology.com
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js
 // ==/UserScript==
+//NOTE: ignore any errors that say "eslint: '$' is not defined", tampermonkey doesnt know what jquery is (everything will still work regardless)
 
 (function() {
     'use strict';
@@ -17,6 +18,14 @@
         return this.text(this.text() == b ? a : b);
     }
 });
+
+    //all url defs in 1 place because its easier to change
+    var slopeURL = "https://gkieran.github.io/basedgaming/embeds/slope";
+    var stuntRacerURL = "https://www.addictinggames.com/embed/html5-games/23687";
+    var hexioURL = "https://www.addictinggames.com/embed/html5-games/25180";
+    var bloonstd4URL = "https://www.addictinggames.com/embed/html5-games/20543";
+    var deadshotURL = "https://deadshot.io";
+    var clankerURL = "https://www.addictinggames.com/embed/html5-games/10000216"
     let menuBtn = document.createElement("button");
     menuBtn.textContent = "EGGM3BTL2WDF Menu"
     menuBtn.setAttribute('id', 'menuBtn');
@@ -25,7 +34,10 @@
        let modnav = document.createElement('div');
     let sitenav = document.querySelector('.site-navigation');
     modnav.style.position = 'absolute'
-    modnav.style.backgroundColor = "#29770f";
+    modnav.style.backgroundImage = "url('https://media.tenor.com/F_usYzyrSmUAAAAC/swirl-color.gif')";
+    modnav.style.backgroundHeight = "100%"
+    modnav.style.backgroundWidth = "100%"
+    modnav.style.backgroundRepeat = "no-repeat"
     modnav.style.padding = "5px"
     modnav.style.paddingLeft = "0px"
     modnav.style.paddingRight = "10px"
@@ -97,11 +109,8 @@ slope.style.display = "none";
 slope.style.height = "550px";
 slope.style.width = framewidth;
 slope.style.opacity = "80%";
-slope.src = "https://gkieran.github.io/basedgaming/embeds/slope"
+slope.src = slopeURL;
     document.body.appendChild(slope);
-
-
-
     $("#slopeBtn").click(function(){
   $("#slope").toggle();
 $("#slopeBtn").toggleText('Slope', 'Slope(on)');
@@ -113,7 +122,7 @@ stunt.style.display = "none";
 stunt.style.height = frameheight;
 stunt.style.width = framewidth;
 stunt.style.opacity = "80%";
-stunt.src = "https://gkieran.github.io/404"
+stunt.src = stuntRacerURL;
     document.body.appendChild(stunt);
 
 
@@ -130,7 +139,7 @@ hex.style.display = "none";
 hex.style.height = frameheight;
 hex.style.width = framewidth;
 hex.style.opacity = "80%";
-hex.src = "https://www.addictinggames.com/embed/html5-games/25180"
+hex.src = hexioURL;
     document.body.appendChild(hex);
 
 
@@ -145,7 +154,7 @@ td4.style.display = "none";
 td4.style.height = frameheight;
 td4.style.width = framewidth;
 td4.style.opacity = "80%";
-td4.src = "https://www.addictinggames.com/embed/html5-games/20543"
+td4.src = bloonstd4URL;
     document.body.appendChild(td4);
 
 
@@ -161,7 +170,7 @@ shot.style.display = "none";
 shot.style.height = frameheight;
 shot.style.width = framewidth;
 shot.style.opacity = "80%";
-shot.src = "https://www.addictinggames.com/embed/html5-games/25189"
+shot.src = deadshotURL;
     document.body.appendChild(shot);
 
 
@@ -176,7 +185,7 @@ clank.style.display = "none";
 clank.style.height = frameheight;
 clank.style.width = framewidth;
 clank.style.opacity = "80%";
-clank.src = "https://www.addictinggames.com/embed/html5-games/10000216"
+clank.src = clankerURL;
     document.body.appendChild(clank);
 
 
