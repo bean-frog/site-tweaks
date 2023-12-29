@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       not fake ddos
-// @namespace  http://bean-frog.github.io/
+// @namespace  https://beanfrog.xyz
 // @version    0.1
 // @description  very real ddos
 // @match      https://*/*
