@@ -1,34 +1,32 @@
 // ==UserScript==
-// @name         slope y8 schoology integration because fuck you
-// @version      0.1
-// @description  adds the slope game to your schoology homepage
-// @author       graeme kieran
-// @match        pausd.schoology.com/*
-// @icon         https://cdn-icons-png.flaticon.com/512/3422/3422228.png
-// @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js
+// @name         wowowowow slope
+// @namespace    http://tampermonkey.net/
+// @version      2024-02-02
+// @description  appends slope game
+// @author       me
+// @match        https://pausd.schoology.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=schoology.com
+// @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-//toggle visibility using jquery
-    let togbtn = document.createElement('button');
-    togbtn.setAttribute('id', 'togbtn');
-    togbtn.textContent = 'toggle';
-    document.body.appendChild(togbtn);
+let menu = document.createElement("div");
+    menu.setAttribute('style', 'position:absolute; padding: 5px;top: 0; right: 0; height: fit-content; width: fit-content; z-index: 599990');
+    menu.innerHTML = "<input type='checkbox' id='toggle' style='background-color: transparent; color: transparent'></input>";
+    document.body.insertAdjacentElement('afterbegin', menu);
 
+    let game = document.createElement("iframe");
+    game.setAttribute("style", "height: 100%; width: 100%; opacity: 0.1; position: absolute; z-index: 999; display:none");
+    game.src = "https://slopegame.online/slope-game.embed";
+    game.id = "game"
+    document.body.insertAdjacentElement('afterbegin', game);
 
-    $("#togbtn").click(function(){
-  $("#iframe").toggle();
-});
-//game iframe
-const iframe = document.createElement("iframe");
-    iframe.setAttribute('id', 'iframe');
-iframe.style.display = "block";
-iframe.style.height = "550px";
-iframe.style.width = "100%";
-iframe.style.opacity = "80%";
-iframe.src = "https://slopegame.online/slope-game.embed";
-document.body.appendChild(iframe);
-        iframe.style.display = 'none';
-
+    document.getElementById("toggle").addEventListener('change', function() {
+if (document.getElementById("toggle").checked) {
+    document.getElementById("game").style.display = "block";
+} else {
+    document.getElementById("game").style.display = "none";
+}
+    })
 })();
